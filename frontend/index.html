@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Meal Planner</a>
+            <button class="btn btn-light ms-auto" id="settingsBtn" style="position: absolute; right: 20px; top: 10px;">
+                <span class="bi bi-gear"></span> Settings
+            </button>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="meals-tab" data-bs-toggle="tab" data-bs-target="#meals" type="button" role="tab">Meals Catalog</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients" type="button" role="tab">Ingredients</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="diet-tags-tab" data-bs-toggle="tab" data-bs-target="#diet-tags" type="button" role="tab">Diet</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="allergy-tags-tab" data-bs-toggle="tab" data-bs-target="#allergy-tags" type="button" role="tab">Allergies</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="macronutrient-tags-tab" data-bs-toggle="tab" data-bs-target="#macronutrient-tags" type="button" role="tab">Macronutrients</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="calendar-tab" data-bs-toggle="tab" data-bs-target="#calendar" type="button" role="tab">Calendar</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="mainTabsContent">
+            <div class="tab-pane fade show active" id="meals" role="tabpanel">
+                <div id="meals-catalog-view"></div>
+            </div>
+            <div class="tab-pane fade" id="ingredients" role="tabpanel">
+                <div id="ingredients-view"></div>
+            </div>
+            <div class="tab-pane fade" id="diet-tags" role="tabpanel">
+                <div id="diet-tags-view"></div>
+            </div>
+            <div class="tab-pane fade" id="allergy-tags" role="tabpanel">
+                <div id="allergy-tags-view"></div>
+            </div>
+            <div class="tab-pane fade" id="macronutrient-tags" role="tabpanel">
+                <div id="macronutrient-tags-view"></div>
+            </div>
+            <div class="tab-pane fade" id="calendar" role="tabpanel">
+                <div id="calendar-view"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/tag-colors.js"></script>
+    <script type="module" src="assets/app.js"></script>
+</body>
+</html>

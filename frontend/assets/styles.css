@@ -1,0 +1,10 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.tab-content {
+    margin-top: 2rem;
+}
